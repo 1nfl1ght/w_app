@@ -1,1 +1,11 @@
-@import "~normalize.css";
+@import '~normalize.css';
+
+body {
+    background-color: #101014;
+}
+
+@font-face {
+    font-family: "Circe-Light";
+    src: url("../fonts/Circe/Circe-Light.ttf");
+    font-weight: 400;
+}
