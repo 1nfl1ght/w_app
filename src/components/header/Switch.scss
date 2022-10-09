@@ -28,7 +28,6 @@
         border-radius: 100px;
         transition: .2s;
     }
-
     input:checked + .slider:before {
         transform: translate(100%);
     }
