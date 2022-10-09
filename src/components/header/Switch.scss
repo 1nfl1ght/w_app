@@ -18,6 +18,9 @@
         left: -2px;
         right: 0;
         bottom: 0;
+        background-image: url('../../assets/icons/global/Group.svg');
+        background-repeat: no-repeat;
+        background-position: left 20px center;
     }
     .slider::before{
         position: absolute;
@@ -30,6 +33,11 @@
     }
     input:checked + .slider:before {
         transform: translate(100%);
+    }
+
+    img {
+        height: 40px;
+        width: 40px;
     }
 }
 
