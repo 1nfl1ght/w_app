@@ -1,5 +1,5 @@
 import React from 'react';
-import GlobalSvgSelector from '../../assets/icons/global/GlobalSvgSelector';
+// import { GlobalSvgSelector } from '../../assets/icons/global/GlobalSvgSelector';
 import { Switch } from './Switch';
 
 import s from './Header.module.scss';

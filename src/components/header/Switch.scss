@@ -7,6 +7,7 @@
     background-color: #1E1E1E;
     border: solid 1px #545353;
     input {
+        position: absolute;
         opacity: 0;
         width: 0;
         height: 0;
@@ -18,7 +19,6 @@
         left: -2px;
         right: 0;
         bottom: 0;
-        background-image: url('../../assets/icons/global/Group.svg');
         background-repeat: no-repeat;
         background-position: left 20px center;
     }
@@ -38,6 +38,17 @@
     img {
         height: 40px;
         width: 40px;
+    }
+
+    #moon-icon {
+        filter: invert(1);
+    }
+
+    .themes-icons {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 }
 
