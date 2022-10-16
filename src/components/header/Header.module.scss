@@ -2,8 +2,25 @@ $darkgrey: #1E1E1E;
 $lightgrey: #545353;
 
 .header {
+    margin-top: 50px;
     font-size: 30px;
     display: flex;
+    justify-content: space-between;
+
+    #wrapper1 {
+        display: flex;
+        align-items: center;
+    }
+    
+    #wrapper2 {
+        display: flex;
+        align-items: center;
+    }
+    
+    #wrapper3 {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .menu-icon {
@@ -25,6 +42,7 @@ $lightgrey: #545353;
 }
 
 .notifications-icon {
+    margin: 0px 50px 0px 40px;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -69,7 +87,12 @@ $lightgrey: #545353;
 .profile {
     width: 70px;
     height: 70px;
+    margin-left: 77px;
     background-image: url('../../assets/images/Ellipse\ 3.png');
     cursor: pointer;
 }
 
+.container {
+    width: 1620px;
+    margin: 0px auto;
+}

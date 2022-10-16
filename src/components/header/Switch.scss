@@ -16,11 +16,21 @@
         position: absolute;
         cursor: pointer;
         top: -2px;
-        left: -2px;
+        left: 0px;
         right: 0;
         bottom: 0;
         background-repeat: no-repeat;
         background-position: left 20px center;
+        #moon-icon {
+            opacity: 0;
+            filter: invert(0);
+            transition: .3s;
+        }
+        #sun-icon {
+            filter: invert(1);
+            transition: .3s;
+            margin-left: 3px;
+        }
     }
     .slider::before{
         position: absolute;
@@ -32,7 +42,16 @@
         transition: .2s;
     }
     input:checked + .slider:before {
-        transform: translate(100%);
+        transform: translate(90%);
+    }
+
+    input:checked + .slider {
+        #moon-icon {
+            opacity: 1;
+        }
+        #sun-icon {
+            opacity: 0;
+        }
     }
 
     img {
