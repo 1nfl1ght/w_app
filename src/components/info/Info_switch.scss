@@ -1,0 +1,53 @@
+.info {
+    .switch {
+        width: 357px;
+        height: 55px;
+        box-sizing: border-box;
+        .tabs-text {
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+            font-family: "Circe";
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .slider {
+            box-sizing: border-box;
+            .tabs-text {
+                span {
+                    z-index: 1;
+                    color: #1E1E1E;
+                    transition: .3s;
+                }
+            }
+            span:first-child {
+                opacity: 1;
+            }
+            span:last-child {
+                opacity: 0;
+            }
+        }
+        .slider:before {
+          width: 169px;
+          height: 57px;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+        }
+        input:checked + .slider:before {
+            transform: translate(80%);
+            width: 200px;
+        }
+        input:checked + .slider {
+            span:first-child {
+                opacity: 0;
+            }
+            span:last-child {
+                opacity: 1;
+            }
+        }
+    }
+}
