@@ -1,0 +1,44 @@
+.today {
+    width: 369px;
+    height: 369px;
+    position: relative;
+    padding: 10px 30px 30px 30px;
+    box-sizing: border-box;
+    font-family: "Circe-Light";
+    color: white;
+    border-radius: 45px;
+    background: rgba(95, 34, 185, 1.0);
+    background: -webkit-linear-gradient(top right, rgba(95, 34, 185, 1.0), rgba(24, 136, 176, 1.0));
+    background: -moz-linear-gradient(top right, rgba(95, 34, 185, 1.0), rgba(24, 136, 176, 1.0));
+    background: linear-gradient(to bottom left, rgba(95, 34, 185, 1.0), rgba(24, 136, 176, 1.0));
+    .line {
+        width: 310px;
+        height: 1.5px;
+        margin: 0px auto;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    .top__block {
+        font-size: 30px;
+        line-height: 68px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 400;
+    }
+    .bottom__block {
+        .temp {
+            font-family: "SF-Pro-Display";
+            font-size: 100px;
+            margin: 24px 0px 30px 0px;
+        }
+        p {
+            font-size: 20px;
+            margin: 0px;
+            margin-bottom: 10px;
+        }
+    }
+    .weatherIcon {
+        position: absolute;
+        left: 215px;
+        top: 112px;
+    }
+}
