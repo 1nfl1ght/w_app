@@ -4,6 +4,15 @@ body {
     background-color: #101014;
 }
 
+.container {
+    width: 1620px;
+    margin: 0px auto;
+}
+
+.left_container {
+    width: 1160px;
+}
+
 @font-face {
     font-family: "Circe-Light";
     src: url("../fonts/Circe/Circe-Light.ttf");
@@ -15,3 +24,4 @@ body {
     src: url("../fonts/SF-Pro-Display/SF-Pro-Display-Medium.ttf");
     font-weight: 400;
 }
+

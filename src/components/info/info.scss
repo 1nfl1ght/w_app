@@ -1,0 +1,17 @@
+.into__top_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .text_block {
+        display: flex;
+        p {
+            margin-right: 50px;
+        }
+    }
+    p {
+        font-family: "Circe-Light";
+        color: #FFFFFF;
+        opacity: 0.2;
+        font-size: 40px;
+    }
+}

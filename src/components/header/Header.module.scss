@@ -7,6 +7,12 @@ $lightgrey: #545353;
     display: flex;
     justify-content: space-between;
 
+    .left_container {
+        width: 1160px;
+        display: flex;
+        justify-content: space-between;
+    }
+
     #wrapper1 {
         display: flex;
         align-items: center;
@@ -90,9 +96,4 @@ $lightgrey: #545353;
     margin-left: 77px;
     background-image: url('../../assets/images/Ellipse\ 3.png');
     cursor: pointer;
-}
-
-.container {
-    width: 1620px;
-    margin: 0px auto;
 }
