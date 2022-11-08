@@ -3,7 +3,7 @@ import s from './Today.module.scss'
 
 type Props = {}
 
-const weatherIcon = require('../../assets/images/42.png');
+const moon_cloud = require('../../assets/images/42.png');
 
 export const Today = (props: Props) => {
   return (
@@ -14,7 +14,7 @@ export const Today = (props: Props) => {
         </div>
         <div className={s.line}></div>
         <div className={s.bottom__block}>
-          <img className={s.weatherIcon} src={weatherIcon}/>
+          <img className={s.weatherIcon} src={moon_cloud}/>
           <p className={s.temp}>16</p>
           <p>Real Feel:</p>
           <p>Wind:</p>

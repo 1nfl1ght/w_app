@@ -3,6 +3,7 @@ import { Info_switch } from './Info_switch'
 import { Today } from '../Today/Today'
 import  "../../styles/index.scss"
 import './info.scss'
+import { Days } from '../Days/Days'
 
 type Props = {}
 
@@ -22,6 +23,7 @@ export const Info = (props: Props) => {
             </div>
           </div>
           <Today></Today>
+          <Days/>
         </div>
       </div>
     </div>

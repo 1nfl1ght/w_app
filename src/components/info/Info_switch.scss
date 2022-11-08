@@ -10,7 +10,7 @@
             justify-content: space-around;
             align-items: center;
             color: white;
-            font-family: "Circe";
+            font-family: "Circe-Bold";
             font-size: 24px;
             font-weight: 700;
         }
@@ -31,12 +31,12 @@
             }
         }
         .slider:before {
-          width: 169px;
-          height: 57px;
-          top: 0px;
-          left: 0px;
-          right: 0px;
-          bottom: 0px;
+            width: 169px;
+            height: 57px;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
         }
         input:checked + .slider:before {
             transform: translate(80%);
