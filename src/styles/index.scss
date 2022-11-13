@@ -13,6 +13,29 @@ body {
     width: 1160px;
 }
 
+.line {
+    width: 95%;
+    height: 1.5px;
+    margin: 0px auto;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.ymaps-2-1-79-map {
+    border-radius: 45px;
+}
+
+.ymaps-2-1-79-inner-panes {
+    border-radius: 45px;
+}
+
+.ymaps-2-1-79-ground-pane { 
+    filter: invert(100%)!important; 
+    -ms-filter: invert(100%)!important; 
+    -webkit-filter: invert(100%)!important; 
+    -moz-filter: invert(100%)!important; 
+    -o-filter: invert(100%)!important;
+}
+
 @font-face {
     font-family: "Circe-Light";
     src: url("../fonts/Circe/Circe-Light.ttf");
@@ -22,6 +45,12 @@ body {
 @font-face {
     font-family: "Circe-Bold";
     src: url("../fonts/Circe/Circe-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Circe-Regular";
+    src: url("../fonts/Circe/Circe-Regular.ttf");
     font-weight: 700;
 }
 

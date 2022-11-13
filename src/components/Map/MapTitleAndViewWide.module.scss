@@ -1,0 +1,35 @@
+.map_title_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 102px;
+    margin-bottom: 55px;
+    p {
+        font-family: 'Circe-Regular';
+        font-size: 40px;
+        margin: 0px;
+    }
+    button {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #1E1E1E;
+        border-radius: 100px;
+        border: 1px solid #545353;
+        box-sizing: border-box;
+        width: 236px;
+        height: 56px;
+        transition: .4s;
+        p {
+            font-family: 'Circe-Light';
+            font-size: 24px;
+            color: white;
+            margin-right: 10px;
+        }
+    }
+    button:hover {
+        filter: invert(1);
+    }
+}

@@ -4,6 +4,8 @@ import { Today } from '../Today/Today'
 import  "../../styles/index.scss"
 import './info.scss'
 import { Days } from '../Days/Days'
+import { MapPlacement } from '../Map/MapPlacement'
+import { MapTitleAndViewWide } from '../Map/MapTitleAndViewWide'
 
 type Props = {}
 
@@ -22,8 +24,12 @@ export const Info = (props: Props) => {
               <Info_switch></Info_switch>
             </div>
           </div>
-          <Today></Today>
-          <Days/>
+          <div className="all_days">
+            <Today></Today>
+            <Days/>
+          </div>
+          <MapTitleAndViewWide/>
+          <MapPlacement />
         </div>
       </div>
     </div>

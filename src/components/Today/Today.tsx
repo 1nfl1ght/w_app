@@ -12,7 +12,7 @@ export const Today = (props: Props) => {
           <div className={s.this__day}>Sunday</div>
           <div className={s.this__day}>11:42 PM</div>
         </div>
-        <div className={s.line}></div>
+        <div className="line"></div>
         <div className={s.bottom__block}>
           <img className={s.weatherIcon} src={moon_cloud}/>
           <p className={s.temp}>16</p>

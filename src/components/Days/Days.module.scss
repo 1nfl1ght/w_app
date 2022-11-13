@@ -1,0 +1,38 @@
+.days {
+    display: flex;
+    .card {
+        width: 150px;
+        height: 369px;
+        padding: 10px 30px 30px 30px;
+        box-sizing: border-box;
+        background: linear-gradient(180deg, #1B1A1D 29.95%, #3B3A3E 150.81%);
+        border-radius: 45px;
+        border: 1px solid #545353;
+        margin-left: 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .day {
+            color: white;
+            font-family: "Circe-Regular";
+            font-size: 30px;
+            line-height: 68px;
+        }
+        .img {
+            margin-bottom: 57px;
+        }
+        .line {
+            width: 95%;
+            height: 1.5px;
+            margin: 0px auto 49px 0px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .day_info {
+            font-family: "SF-Pro-Display";
+            font-size: 50px;
+            line-height: 68px;
+            color: white;
+        }
+    }
+}
