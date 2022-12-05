@@ -1,15 +1,20 @@
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 
-export function MapPlacement() {
+type Props = {
+  lon: number,
+  lat: number,
+}
+
+export function MapPlacement( { lon, lat }: Props ) {
   const defaultState = {
-    center: [55.751574, 37.573856],
+    center: [lat, lon],
     zoom: 5,
   };
 
   return (
     <YMaps>
       <Map defaultState={defaultState} width={'1160px'} height={'631px'}>
-        <Placemark geometry={[55.684758, 37.738521]} />
+        <Placemark geometry={[lat, lon]} />
       </Map>
     </YMaps>
   );

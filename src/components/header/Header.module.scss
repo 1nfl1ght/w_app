@@ -47,6 +47,25 @@ $lightgrey: #545353;
     filter: invert(100%);
 }
 
+.search {
+    input[type=search] {
+        background-color: $darkgrey;
+        background-image: url('../../assets/icons/global/Lupa.svg');
+        background-repeat: no-repeat;
+        background-position: center left 34px;
+        border-radius: 100px;
+        box-sizing: border-box;
+        border: solid 1px $lightgrey;
+        font-family: 'Circe-Light';
+        font-size: 24px;
+        line-height: 35px;
+        width: 516px;
+        height: 70px;
+        padding-left: 81px;
+        color: white;
+    }
+}
+
 .notifications-icon {
     margin: 0px 50px 0px 40px;
     width: 70px;
@@ -69,25 +88,6 @@ $lightgrey: #545353;
 .current-place {
     font-family: "Circe-Light";
     color: white;
-}
-
-.search {
-    input[type=search] {
-        background-color: $darkgrey;
-        background-image: url('../../assets/icons/global/Lupa.svg');
-        background-repeat: no-repeat;
-        background-position: center left 34px;
-        border-radius: 100px;
-        box-sizing: border-box;
-        border: solid 1px $lightgrey;
-        font-family: 'Circe-Light';
-        font-size: 24px;
-        line-height: 35px;
-        width: 516px;
-        height: 70px;
-        padding-left: 81px;
-        color: white;
-    }
 }
 
 .profile {
