@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react'
-import { Weather } from '../../store/types/types';
+import { Weather, WeatherData } from '../../store/types/types';
 import s from './Today.module.scss';
 import { icons } from '../../assets/icons';
 
 type Props = {
-  weather: Weather,
+  data: WeatherData,
 }
 
 // const moon_cloud = require('../../assets/images/42.png');
 
-export const Today = ( {weather}: Props) => {
+export const Today = ( {data}: Props ) => {
 
   const [ dayOfTheWeek, setDayOfTheWeek ] = useState('');
   const [ time, setTime ] = useState('');
@@ -32,12 +32,12 @@ export const Today = ( {weather}: Props) => {
         <div className="line"></div>
         <div className={s.bottom__block}>
           <img className={s.weatherIcon} src={icons.moon_cloud}/>
-          <p className={s.temp}>{Math.floor(weather.main.temp)}°</p>
-          <p>Real Feel: {Math.floor(weather.main.feels_like)}°</p>
-          <p>Wind: {Math.floor(weather.wind.speed)} km/h</p>
+          <p className={s.temp}>{Math.floor(data.main.temp)}°</p>
+          <p>Real Feel: {Math.floor(data.main.feels_like)}°</p>
+          <p>Wind: {Math.floor(data.wind.speed)} km/h</p>
           <div style={{display: 'flex', justifyContent: 'space-between'}}>
-            <p style={{margin: '0px'}}>Pressure: {Math.floor(weather.main.pressure)} <b>MB</b></p>
-            <p style={{margin: '0px'}}>Humidity: {Math.floor(weather.main.humidity)}%</p>
+            <p style={{margin: '0px'}}>Pressure: {Math.floor(data.main.pressure)} <b>MB</b></p>
+            <p style={{margin: '0px'}}>Humidity: {Math.floor(data.main.humidity)} %</p>
           </div>
         </div>
     </div>

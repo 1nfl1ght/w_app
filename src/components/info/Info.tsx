@@ -6,25 +6,19 @@ import './info.scss'
 import { Days } from '../Days/Days'
 import { MapTitleAndViewWide } from '../Map/MapTitleAndViewWide'
 import { MapPlacement } from '../Map/MapPlacement'
-import { useCustomDispatch, useCustomSelector } from '../../hooks/store'
-import { fetchCurrentWeather } from '../../store/thunks/fetchCurrentWeather'
 import { useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
+import { RootState } from '../../store'
 
 type Props = {}
 
 export const Info = (props: Props) => {
 
-  const dispatch = useCustomDispatch();
-
-  const {weather} = useCustomSelector(
-    (state)=> state.currentWeatherSliceReducer
-  )
-
-  useEffect( () => {
-    dispatch(fetchCurrentWeather('paris'))
-  }, [] )
-
-  console.log(weather.coord);
+  const dispatch = useDispatch();
+  const weatherData = useSelector((state: RootState) => state.weather.data);
+  const loading = useSelector((state: RootState) => state.weather.loading);
+  const error = useSelector((state: RootState) => state.weather.error);
+  const alertMsg = useSelector((state: RootState) => state.alert.message);
 
   return (
     <div className="container">
@@ -41,11 +35,11 @@ export const Info = (props: Props) => {
             </div>
           </div>
           <div className="all_days">
-            <Today weather={weather}></Today>
+            {weatherData && <Today data={weatherData}></Today>}
             <Days/>
           </div>
           <MapTitleAndViewWide />
-          <MapPlacement lon={weather.coord.lon} lat={weather.coord.lat}/>
+          {weatherData && <MapPlacement lon={weatherData?.coord.lon} lat={weatherData?.coord.lat}/>}
         </div>
       </div>
     </div>
